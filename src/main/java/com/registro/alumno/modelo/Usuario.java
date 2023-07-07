@@ -15,7 +15,7 @@ import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
 import jakarta.persistence.JoinColumn;
 @Entity
-@Table(name = "ALUMNO", uniqueConstraints = @UniqueConstraint(columnNames = "correo"))
+@Table(name = "auth_user", uniqueConstraints = @UniqueConstraint(columnNames = "username"))
 public class Usuario {
 
 	@Id
